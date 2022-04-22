@@ -1,0 +1,11 @@
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5rem auto 6rem;
+}
+.nociudad{
+    color:white;
+    margin:13rem auto;
+}

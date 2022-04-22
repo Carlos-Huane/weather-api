@@ -1,0 +1,27 @@
+.btn{
+    border-radius: 10px;
+    background-color: #EEEEEE;
+    margin-top: 3%;
+    margin-left: 85%;
+    margin-bottom: 0%;
+    margin-right: 15%;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.h2{
+    margin-top: 0%;
+}
+.card{
+    background-color: #393E46;
+    border-style: inset;
+    border-radius: 5px;
+    width: 400px;
+    color:white;
+    font-size: 1rem;
+    margin: 1rem auto;
+}
+.contenidoCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

@@ -1,0 +1,17 @@
+.entrada{
+   width: 20%;
+   height: 40px;
+   margin-bottom: 30px;
+}
+
+.contenedorNav{
+    display:flex;
+    margin:0% 10%;
+    justify-content: center;
+    border-radius: 10px;
+    padding-bottom: 2rem;
+}
+.aleatorio{
+    border-radius: 5px;
+    padding: 3px;
+}
