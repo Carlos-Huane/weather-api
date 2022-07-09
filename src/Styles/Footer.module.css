@@ -1,0 +1,13 @@
+.icons {
+    margin: 0 0.5rem;
+}
+h4 {
+    margin:auto
+}
+h4:hover {
+    color: blue;
+}
+.RedesSociales {
+    display: flex;
+    flex-direction: row;
+}

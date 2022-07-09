@@ -2,8 +2,11 @@ import React, {useState} from "react";
 import Heading from "./Heading.jsx";
 import Cards from "./Cards.jsx";
 import Nav from "./Nav.jsx";
+import Footer from "./Footer.jsx";
 import data from "../data.js";
 import Style from "../Styles/Body.module.css";
+
+import {Route} from 'react-router-dom';
 
 function App(){
     const [cities,setCities]=useState(data);
@@ -33,18 +36,24 @@ function App(){
       });
     }
     function onClose(id) {
-        console.log("ctmr");
         setCities(prevCities => prevCities.filter(c => c.id !== id));
        
       }
     return(
-
         <div className={Style.body}>
-            <Heading />
-            <Cards cities={cities} onClose={onClose} />
-            <Nav
-                onSearch={onSearch}
-            />
+            <Route path="/" element={<Heading />} />/
+            {/* <Route
+                exact path = "/"
+                render = {() => {
+                  <>
+                    <Cards cities={cities} onClose={onClose} />
+                    <Nav
+                        onSearch={onSearch}
+                    />
+                  </>
+                }}
+            /> */}
+            <Footer />
         </div>
     )
 }
