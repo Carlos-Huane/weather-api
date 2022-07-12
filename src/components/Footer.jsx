@@ -1,15 +1,16 @@
 import React from "react";
 import Style from '../Styles/Footer.module.css'
+import {NavLink} from 'react-router-dom'
 function Footer () {
     return (
        <div class="container-fluid" className={Style.text}> 
         <div className="row  bg-secondary p-3 text-white" >
 
-            <div class="col-lg-4"><h4>Weather API</h4></div>
-            <div class="col-lg-4"><h4> About The Proyect </h4></div>
+            <div class="col-lg-4"><h4><NavLink to="/weather-api" >Weather API</NavLink></h4></div>
+            <div class="col-lg-4"><h4><NavLink to="/weather-api/about-proyect">About The Proyect</NavLink></h4></div>
             <div class="col-lg-4">
                 <div className="RedesSociales">
-                    <a style={{fontSize:"1.4rem"}}> <h4> Social Networks</h4></a>  
+                    <a style={{fontSize:"1.4rem"}}> <h4 style={{display:"inline"}}>Social Networks</h4></a>  
                     <a className= {Style.icons} href="https://twitter.com/hsproyect">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>

@@ -4,9 +4,10 @@ import Cards from "./Cards.jsx";
 import Nav from "./Nav.jsx";
 import Footer from "./Footer.jsx";
 import data from "../data.js";
+import About from "./About.jsx"
 import Style from "../Styles/Body.module.css";
 
-import {Route} from 'react-router-dom';
+import {Route,Routes} from 'react-router-dom';
 
 function App(){
     const [cities,setCities]=useState(data);
@@ -41,18 +42,20 @@ function App(){
       }
     return(
         <div className={Style.body}>
-            <Route path="/" element={<Heading />} />/
-            {/* <Route
-                exact path = "/"
-                render = {() => {
-                  <>
-                    <Cards cities={cities} onClose={onClose} />
-                    <Nav
-                        onSearch={onSearch}
-                    />
-                  </>
-                }}
-            /> */}
+          <Heading /> 
+          <Routes>
+            <Route path="/" element={<Heading />} />  {/* AQUI FALTA EL REDIRECCIONAR AL "/weather-api" */}
+            <Route path="/weather-api" element={
+              <div>
+                <Cards cities={cities} onClose={onClose} />
+                <Nav
+                    onSearch={onSearch}
+                />
+              </div>
+            } />
+            <Route path="/weather-api/about-proyect" element={<About />} /> 
+
+          </Routes>
             <Footer />
         </div>
     )
