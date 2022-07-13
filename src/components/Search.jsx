@@ -16,7 +16,7 @@ function Search(props){
         <form onSubmit={submit} class="form-inline" style={{display:"flex"}}>
             <input 
                 class="form-control mr-sm-2" 
-                type="search" placeholder="Ciudad..." 
+                type="search" placeholder="Country or City..." 
                 aria-label="Search" 
                 onChange={cambioCiudad}
                 value={city}

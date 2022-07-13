@@ -7,10 +7,11 @@ import data from "../data.js";
 import About from "./About.jsx"
 import Style from "../Styles/Body.module.css";
 
-import {Route,Routes} from 'react-router-dom';
+import {Route, Routes, Navigate} from 'react-router-dom';
+import CardDetail from "./CardDetail.jsx";
 
 function App(){
-    const [cities,setCities]=useState(data);
+    const [cities,setCities]=useState([]);
     const apiKey='e9c40b529134bb94cd5ee7ef442c741a';
      function onSearch(ciudad) {
     fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric`)
@@ -44,7 +45,7 @@ function App(){
         <div className={Style.body}>
           <Heading /> 
           <Routes>
-            <Route path="/" element={<Heading />} />  {/* AQUI FALTA EL REDIRECCIONAR AL "/weather-api" */}
+            <Route path="/" element={<Navigate to="/weather-api" />} />  {/* AQUI FALTA EL REDIRECCIONAR AL "/weather-api" */}
             <Route path="/weather-api" element={
               <div>
                 <Cards cities={cities} onClose={onClose} />
@@ -54,7 +55,7 @@ function App(){
               </div>
             } />
             <Route path="/weather-api/about-proyect" element={<About />} /> 
-
+            <Route path="/weather-api/:country" element={<CardDetail country={cities}/>} />  
           </Routes>
             <Footer />
         </div>

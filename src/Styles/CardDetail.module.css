@@ -1,0 +1,23 @@
+/* .detail {
+    padding: 1rem 0;
+    border-radius: 2%;
+    margin: 1rem auto;
+    width: 80%;
+    background-color: rgb(146, 174, 190);
+} */
+
+.detail{
+    padding: 1.3rem 0;
+    line-height: 25px;
+    background-color: #393E46;
+    border-style: inset;
+    border-radius: 5px;
+    width: 360px;
+    
+    color:white;
+    font-size: 1rem;
+    margin: 1rem auto;
+}
+.detail p {
+    font-size: 18px;
+}

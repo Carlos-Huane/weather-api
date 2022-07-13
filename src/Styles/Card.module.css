@@ -11,6 +11,9 @@
 .h2{
     margin-top: 0%;
 }
+.h2 a:hover {
+    color: rgb(39, 180, 180);
+}
 .card{
     background-color: #393E46;
     border-style: inset;
@@ -25,4 +28,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.contenidoCard h4:hover {
+    color:white;
 }

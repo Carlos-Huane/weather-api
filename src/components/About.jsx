@@ -3,11 +3,14 @@ import Style from '../Styles/About.module.css'
 const About = () => {
     return(
     <div className= {Style.text}>
-        <p>En este proyecto cree una página que nos indica las temperaturas mínimas y máximas 
-        de cada ciudad usando html ,css , React, framework como bootstrap para el diseño del navegador 
-        y buenas practicas con react, además css modules para el diseño de la página.
-        Aplicando y profundizando conceptos como composición de componentes, estados, props 
-        y hooks,así como el uso de llamados de apis mediante FETCH y enrutados para un sitio web SPA (Single Page Aplication). Espero que les guste. HS </p>
+        <p> In this project I created a page that indicates the minimum and maximum 
+            temperatures of each city using html, css, React, framework such as bootstrap 
+            for browser design and good practices with react, as well as css modules for page 
+            design. I applied and deepened concepts such as component composition, states, props 
+            and hooks, as well as the use of apis calls through FETCH and routing for a SPA
+            (Single Page Application) website with the aim of showing specific details of the climate 
+            of each Country City. I hope you like it.
+        </p>
     </div>
     )
 }

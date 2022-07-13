@@ -8,6 +8,7 @@ function Cards(props) {
       <div className={Style.cards}>
         {
           props.cities.map((element) =>  {
+        
             return( 
             <Card
               key={element.id}
