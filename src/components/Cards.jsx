@@ -26,7 +26,7 @@ function Cards(props) {
   else{
     return(
       <div className={Style.nociudad}>
-        <h1>No existen ciudades :( </h1>  
+        <h1>No country or city added :( </h1>  
       </div>
     )
   }
