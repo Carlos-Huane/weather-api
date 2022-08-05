@@ -5,7 +5,7 @@ function Footer () {
     return (
        <div class="container-fluid" className={Style.text}> 
         <div className="row  bg-secondary p-3 text-white" >
-
+ 
             <div class="col-lg-4"><h4><NavLink to="/weather-api" >Weather API</NavLink></h4></div>
             <div class="col-lg-4"><h4><NavLink to="/weather-api/about-proyect">About The Proyect</NavLink></h4></div>
             <div class="col-lg-4">
